@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF">
+
+    <TextView
+        android:id="@+id/kalkulator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Custom Calculator"
+        android:textStyle="bold"
+        android:textColor="#4A148C"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:hint="First Number"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#6200EA" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:hint="Second Number"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#6200EA" />
+
+    <RadioGroup
+        android:id="@+id/operatorGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="24sp"
+            android:buttonTint="#6200EA" />
+
+        <RadioButton
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="24sp"
+            android:buttonTint="#6200EA" />
+
+        <RadioButton
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:textSize="24sp"
+            android:buttonTint="#6200EA" />
+
+        <RadioButton
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            android:textSize="24sp"
+            android:buttonTint="#6200EA" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Calculate"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8E24AA" />
+
+</LinearLayout>
